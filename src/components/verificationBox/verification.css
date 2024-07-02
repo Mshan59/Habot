@@ -1,0 +1,10 @@
+.verified{
+    background: #E8FBFF;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}

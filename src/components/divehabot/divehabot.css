@@ -1,0 +1,30 @@
+.dive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.mdkl{
+ display: flex;
+ flex-direction: row;
+ /* gap: 10px; */
+ padding: 20px;
+}
+.list {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.list .col-md-5 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border:1.5px solid #E7770D;
+    border-radius: 5px ;
+}
+.list .col-md-5:hover{
+    background: #E7770D;
+    color: #fff;
+}
