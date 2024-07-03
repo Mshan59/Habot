@@ -23,7 +23,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand logo mx-4" href="#">
-                        <img src="./src/assets/logo_1.png" alt="Habot_Logo" className="d-inline-block align-text-top" />
+                        <img src="./logo_1.png" alt="Habot_Logo" className="d-inline-block align-text-top" />
                     </a>
                     <button className="navbar-toggler" type="button" onClick={toggleMenu}>
                         <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />

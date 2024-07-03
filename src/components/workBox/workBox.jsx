@@ -17,7 +17,7 @@ const WorkBox = () => {
           <div className="box_">
             <img
               className="my-2"
-              src="./src/assets/1.png"
+              src="./1.png"
               height={60}
               width={60}
               alt=""
@@ -27,7 +27,7 @@ const WorkBox = () => {
           <div className="box_">
             <img
               className="my-2"
-              src="./src/assets/2.png"
+              src="./2.png"
               height={60}
               width={60}
               alt=""
@@ -37,7 +37,7 @@ const WorkBox = () => {
           <div className="box_">
             <img
               className="my-2"
-              src="./src/assets/3.png"
+              src="./3.png"
               height={60}
               width={60}
               alt=""
@@ -48,7 +48,7 @@ const WorkBox = () => {
           <div className="box__">
             <img
               className="my-2"
-              src="./src/assets/4.png"
+              src="./4.png"
               height={60}
               width={60}
               alt=""
@@ -58,7 +58,7 @@ const WorkBox = () => {
           <div className="box__">
             <img
               className="my-2"
-              src="./src/assets/5.png"
+              src="./5.png"
               height={60}
               width={60}
               alt=""
@@ -68,7 +68,7 @@ const WorkBox = () => {
           <div className="box__">
             <img
               className="my-2"
-              src="./src/assets/6.png"
+              src="./6.png"
               height={60}
               width={60}
               alt=""
