@@ -1,34 +1,81 @@
-import React from 'react';
-import './workBox.css';
+import { useTranslation } from "react-i18next";
+import "./workBox.css";
 
-const Box = ({ imgSrc, text, index }) => (
-  <div className={`box d-flex flex-column ${index % 2 === 0 ? 'alternate-background' : ''}`}>
-    <img className="my-2" src={imgSrc} alt="" />
-    <p>{text}</p>
-  </div>
-);
-
-const WorkBox = ({ data }) => {
-  const firstRow = data.slice(0, 3);
-  const secondRow = data.slice(3);
+const WorkBox = () => {
+  const { t } = useTranslation();
 
   return (
     <div className="workbox container">
-      <h3>How it Works?</h3>
-      <p className="col-md-8 my-4">
-        Buyers post their needs and review top suppliers, while suppliers
-        complete profiles, connect with potential buyers, and build successful
-        business relationships, sharing valuable feedback.
-      </p>
-      <div className="col-md-8 d-flex">
-        {firstRow.map((box, index) => (
-          <Box key={index} imgSrc={box.imgSrc} text={box.text} index={index} />
-        ))}
+      <div className="d-flex justify-content-center align-item-center flex-column text-center">
+      <h3>{t("howItWorks")}</h3>
+     <center> <p className="col-md-8 my-4">
+        {t("buyersPost")} {t("topSuppliers")}
+      </p></center>
       </div>
-      <div className="col-md-8 d-flex">
-        {secondRow.map((box, index) => (
-          <Box key={index + 3} imgSrc={box.imgSrc} text={box.text} index={index + 3} />
-        ))}
+      <div className="row justify-content-center">
+        <div className="col-md-8 d-flex flex-wrap justify-content-center ">
+          <div className="box_">
+            <img
+              className="my-2"
+              src="./src/assets/1.png"
+              height={60}
+              width={60}
+              alt=""
+            />
+            <p>{t("selectRole")}</p>
+          </div>
+          <div className="box_">
+            <img
+              className="my-2"
+              src="./src/assets/2.png"
+              height={60}
+              width={60}
+              alt=""
+            />
+            <p>{t("buyersPostRequirements")}</p>
+          </div>
+          <div className="box_">
+            <img
+              className="my-2"
+              src="./src/assets/3.png"
+              height={60}
+              width={60}
+              alt=""
+            />
+            <p>{t("reviewSelectContact")}</p>
+          </div>
+          <div className="w-100 d-lg-none"></div> {/* Clearfix for small screens */}
+          <div className="box__">
+            <img
+              className="my-2"
+              src="./src/assets/4.png"
+              height={60}
+              width={60}
+              alt=""
+            />
+            <p>{t("suppliersCompleteProfile")}</p>
+          </div>
+          <div className="box__">
+            <img
+              className="my-2"
+              src="./src/assets/5.png"
+              height={60}
+              width={60}
+              alt=""
+            />
+            <p>{t("contactBuyers")}</p>
+          </div>
+          <div className="box__">
+            <img
+              className="my-2"
+              src="./src/assets/6.png"
+              height={60}
+              width={60}
+              alt=""
+            />
+            <p>{t("connectMakeBusiness")}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

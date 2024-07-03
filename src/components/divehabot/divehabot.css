@@ -23,8 +23,39 @@
     padding: 8px 10px;
     border:1.5px solid #E7770D;
     border-radius: 5px ;
+    cursor: pointer;
 }
 .list .col-md-5:hover{
     background: #E7770D;
     color: #fff;
 }
+/* src/components/divehabot/divehabot.css */
+.dive {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .mdkl {
+    text-align: left;
+  }
+  
+  .mdkl h2, .mdkl p, .mdkl button {
+    text-align: left;
+  }
+  
+  .list {
+    direction: ltr;
+  }
+  
+  :lang(ar) .mdkl {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  
+  :lang(ar) .mdkl h2, :lang(ar) .mdkl p, :lang(ar) .mdkl button {
+    text-align: right;
+  }
+  
+  :lang(ar) .list {
+    direction: rtl;
+  }
+  

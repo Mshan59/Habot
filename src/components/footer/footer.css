@@ -1,12 +1,13 @@
-.footerr{
+.footerr {
     display: flex;
     background: #123557;
     width: 100%;
-    /* height: 200px; */
+    height: auto;
     margin-top: 100px;
     padding: 40px 0 40px 0;
 }
-.foo{
+
+.foo {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -14,4 +15,25 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .foo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section-1,
+    .section-2 {
+        width: 100%;
+    }
+    
+    .section-2 {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .foo ul {
+        padding-left: 0;
+    }
 }
